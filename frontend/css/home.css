@@ -1,0 +1,67 @@
+#title{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.box-container{
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.search_form,
+.login_form {
+    border-radius: 25px;
+    border: #DCDCDC 1px solid;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search_form {
+    padding: 50px;
+}
+
+.search_form label {
+    font-size: 18px;
+}
+
+.search_form button {
+    width: 180px;
+    margin-top: 5rem;
+}
+
+.login_form {
+    padding: 30px;
+    width: 280px;
+    margin-top: 14px;
+}
+
+.login_form p {
+    color: #FF7878;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login_form label,
+.login_form input.form-control {
+    font-size: 12px;
+}
+
+.login {
+    margin-top: 3rem;
+}
+
+.login_form button {
+    width: 86px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 3rem;
+}
+
+#register {
+    font-size: 14px;
+    vertical-align: bottom;
+    margin-left: 0.8rem;
+    margin-top: 1.4rem;
+    color: #306ADC;
+    opacity: 0.66;
+}

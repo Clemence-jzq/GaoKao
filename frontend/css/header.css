@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #306ADC;
+    opacity: 0.66;
+    height: 6%;
+    padding: 14px 24px;
+}
+
+#logo{
+    width: 50px;
+}
+
+.nav_left p{
+    display: inline;
+    color: white;
+    margin-left: 3rem;
+    font-size: 20px;
+    vertical-align: middle;
+}

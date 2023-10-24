@@ -1,0 +1,22 @@
+h1 {
+    font-weight: 700;
+}
+
+.btn{
+    background-color: #306ADC;
+    opacity: 0.66;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    height: 48px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+input.form-control,
+.form-select{
+    font-size: 16px;
+}
