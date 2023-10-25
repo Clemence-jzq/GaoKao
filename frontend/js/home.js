@@ -5,4 +5,13 @@ $(document).ready(function () {
             $('#province').append(`<option value="${element.id}">${element.name}</option>`);
         });
     });
+
+    $('#search_form button').click(function () {
+        let score = $('#score').val();
+        if (!score) {
+            $('#scoreMsg').show();
+        }
+
+        return false;
+    });
 });

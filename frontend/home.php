@@ -18,6 +18,7 @@
                     </div>
                     <div class="col-6">
                         <input type="text" name="score" id="score" class="form-control">
+                        <small id="scoreMsg">请输入高考分数</small>
                     </div>
                 </div>
                 <!-- province -->
