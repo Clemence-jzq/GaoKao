@@ -11,7 +11,12 @@ class University{
     name: string,
     location: int {foreign key},
     type: enum{综合, 理工, 师范, 农业, 林业}，
-    level: enum{985, 211, 双一流}
+    level: Tag
+}
+
+class Tag{
+    id: int,
+    name: enum{985, 211, 双一流}
 }
 
 class Department{
@@ -48,6 +53,7 @@ class WishList{
 
 
 University "1" *-- "1..*" Department : possess >
+University "*" <-- "*" Tag : with >
 Department "1" *-- "1..*" Major : has >
 Major "1" o.. "1..*" AdmissionScore : contains >
 AdmissionScore "1" o.. "1" Province : for >
