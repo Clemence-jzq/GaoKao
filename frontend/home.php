@@ -10,7 +10,7 @@
         <div class="col-lg-3"></div>
 
         <div class="center col-lg-5 col-md-6">
-            <form action="" class="search_form">
+            <form action="" id="search_form">
                 <!-- score -->
                 <div class="row g-3 align-items-center justify-content-center">
                     <div class="col-auto">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="right col-lg-3 col-md-5">
-            <form action="" class="login_form">
+            <form action="" id="login_form">
                 <p>登录账号可以将心仪专业<br>加入心愿单进行比对哦</p>
                 <!-- mail -->
                 <div class="row g-3 align-items-center justify-content-center">
