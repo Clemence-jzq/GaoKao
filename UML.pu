@@ -1,0 +1,55 @@
+@startuml gaokao
+
+class Province {
+    id: int,
+    name: string,
+    name_pinyin: string
+}
+
+class University{
+    id: int,
+    name: string,
+    location: int {foreign key}
+}
+
+class Department{
+    id: int,
+    name: string
+}
+
+class Major{
+    id: int,
+    name: string,
+    admission_score[n]: int {foreign key},
+    student_limit: int
+}
+
+class AdmissionScore{
+    id: int,
+    province: int {foreign key},
+    score: int
+}
+
+class User{
+    id: int,
+    name: string,
+    location: int {foreign key},
+    score: int
+}
+
+class WishList{
+    id: int,
+    user: int {foreign key},
+    major: int {foreign key}
+}
+
+
+
+University "1" *-- "1..*" Department : possess >
+Department "1" *-- "1..*" Major : has >
+Major "1" o.. "1..*" AdmissionScore : contains >
+AdmissionScore "1" o.. "1" Province : for >
+University "*" ..o "1" Province : in >
+User "*" ..o "1" Province : in >
+User "1" o.. "*" WishList : possess >
+WishList "*" o.. "*" Major : contains >
