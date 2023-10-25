@@ -9,7 +9,9 @@ class Province {
 class University{
     id: int,
     name: string,
-    location: int {foreign key}
+    location: int {foreign key},
+    type: enum{综合, 理工, 师范, 农业, 林业}，
+    level: enum{985, 211, 双一流}
 }
 
 class Department{
@@ -53,3 +55,5 @@ University "*" ..o "1" Province : in >
 User "*" ..o "1" Province : in >
 User "1" o.. "*" WishList : possess >
 WishList "*" o.. "*" Major : contains >
+
+@enduml
