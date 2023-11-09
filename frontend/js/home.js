@@ -8,8 +8,12 @@ $(document).ready(function () {
 
     $('#search_form button').click(function () {
         let score = $('#score').val();
+        let province = $('#province').val();
+
         if (!score) {
             $('#scoreMsg').show();
+        } else {
+            $.post("result.php", { score: score, province: province });
         }
 
         return false;
