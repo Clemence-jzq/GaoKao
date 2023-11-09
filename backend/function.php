@@ -2,11 +2,11 @@
 function addStylesheet($fileName)
 {
     global $extraCSS;
-    $extraCSS .= '<link rel="stylesheet" href="frontend/css/' . $fileName . '">';
+    $extraCSS .= '<link rel="stylesheet" href="/GAOKAO/frontend/css/' . $fileName . '">';
 }
 
 function addScript($fileName)
 {
     global $extraJS;
-    $extraJS = '<script src="frontend/js/' . $fileName . '"></script>';
+    $extraJS = '<script src="/GAOKAO/frontend/js/' . $fileName . '"></script>';
 }
